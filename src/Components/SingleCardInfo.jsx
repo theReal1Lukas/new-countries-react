@@ -21,7 +21,7 @@ function SingleCardInfo () {
               <table style={{width:'100%'}}>
                 <tr>
                   <th>
-                    <h1 class="single-card-country-name"></h1>
+                    <h1 class="single-card-country-name">/</h1>
                   </th>
                 </tr>
                 <tr>
