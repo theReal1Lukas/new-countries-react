@@ -2,6 +2,7 @@ function SingleCardInfo () {
 
     function goHome () {
         window.location.reload();
+        window.location.href='/'
     }
 
     return (

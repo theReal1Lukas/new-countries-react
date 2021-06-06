@@ -2,8 +2,7 @@ import React from 'react';
 import Card from '../Card';
 import {Container, Row, Col} from 'reactstrap';
 import africaRegion from './africa-region';
-
-
+// 
 function AfricaCards () {
     return (
       <>
