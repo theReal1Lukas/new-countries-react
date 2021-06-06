@@ -14,7 +14,7 @@ function SingleCardInfo () {
           </div>
           <div class="row mt-5 align-items-center">
             <div class="col-12 col-md-6 text-center">
-              <img class='card-img-top' src=''/>
+              <img class='card-img-top' src='' alt='flag-img'/>
             </div>
             <div class="col-12 col-md-1"></div>
             <div class="col-12 col-md text-center">
