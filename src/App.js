@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <Input />
+    <Navbar className='navbar-main' />
+    <Input cllasName='input-main'/>
     <Container fluid={true} className='cards-container'>
       <Row>
       {countries.map(country => {

@@ -2,14 +2,11 @@ import React from 'react';
 import Card from '../Card';
 import {Container, Row, Col} from 'reactstrap';
 import africaRegion from './africa-region';
-import Navbar from '../Navbar'
-import Input from '../Input'
+
 
 function AfricaCards () {
     return (
       <>
-      <Navbar />
-      <Input />
       <Container fluid={true} className='africa-cards-container'>
         <Row>
         {africaRegion.map(africaCountry => {

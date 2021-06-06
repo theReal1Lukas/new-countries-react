@@ -3,7 +3,6 @@ import Card from '../Card'
 import {Container, Row, Col} from 'reactstrap';
 import americaRegion from './america-region';
 
-
 function AmericaCards () {
     return (
       <>
@@ -30,4 +29,5 @@ function AmericaCards () {
    
     );
    }
+   
 export default AmericaCards;

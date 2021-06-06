@@ -42,6 +42,8 @@ function Input () {
       $('#region-asia').css('display', 'none');
       $('#region-europe').css('display', 'none');
       $('#region-oceania').css('display', 'none');
+      $('.input-main').css('display', 'none');
+      $('.input-conent').css('display', 'block');
     
     }
 
@@ -59,7 +61,7 @@ function Input () {
     function showAsia() {
     
       $('#region-asia').css('display', 'block');
-      $('#root').css('display', 'none');
+      $('.cards-container').css('display', 'none');
       $('#region-america').css('display', 'none');
       $('#region-europe').css('display', 'none');
       $('#region-oceania').css('display', 'none');
@@ -70,7 +72,7 @@ function Input () {
     function showEurope() {
     
       $('#region-europe').css('display', 'block');
-      $('#root').css('display', 'none');
+      $('.cards-container').css('display', 'none');
       $('#region-oceania').css('display', 'none');
       $('#region-africa').css('display', 'none');
       $('#region-america').css('display', 'none');
@@ -80,7 +82,7 @@ function Input () {
     
     function showOceania() {
       $('#region-oceania').css('display', 'block');
-      $('#root').css('display', 'none');
+      $('.cards-container').css('display', 'none');
       $('#region-africa').css('display', 'none');
       $('#region-america').css('display', 'none');
       $('#region-asia').css('display', 'none');
@@ -89,7 +91,7 @@ function Input () {
 
     function showAll() {
       $('#region-oceania').css('display', 'none');
-      $('#root').css('display', 'block');
+      $('.cards-container').css('display', 'block');
       $('#region-africa').css('display', 'none');
       $('#region-america').css('display', 'none');
       $('#region-asia').css('display', 'none');
