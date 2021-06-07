@@ -2,8 +2,12 @@ import './App.css';
 import Card from './Components/Card'
 import Navbar from './Components/Navbar'
 import countries from './countries'
-import Input from './Components/Input';
-import {Container, Row, Col} from 'reactstrap'
+import InputRow from './Components/InputRow';
+import AfricaCards from './Components/Africa/AfricaCards'
+import AmericaCards from './Components/Americas/AmericaCards'
+import AsiaCards from './Components/Asia/AsiaCards'
+import EuropeCards from './Components/Europe/EuropeCards'
+import OceaniaCards from './Components/Oceania/OceaniaCards'
 
 
 function App() {
@@ -11,12 +15,12 @@ function App() {
   return (
     <>
     <Navbar />
-    <Input />
-    <Container fluid={true} className='cards-container'>
-      <Row>
+    <InputRow />
+    <div className='container-fluid cards-container'>
+    <div className='row'>
       {countries.map(country => {
         return (
-          <Col xs='12' md='6' lg='4' xl='3'  className='single-card'>
+          <div className='col-12 col-md-6 col-lg-4 col-xl-3 single-card'>
           <Card 
     name={country.name}
     population={country.population}
@@ -24,12 +28,17 @@ function App() {
     region = {country.region}
     flag = {country.flag}
   />
-          </Col>
+          </div>
         )
       })}
     
-      </Row>
-    </Container>
+      </div>
+    </div>
+   <AfricaCards />
+   <AmericaCards />
+   <AsiaCards />
+   <EuropeCards />
+   <OceaniaCards />
 
 </>
 );

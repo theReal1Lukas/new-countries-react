@@ -16,28 +16,32 @@ td {
 
 /* id's ///////////////// */
 
-#root,
-#region-africa,
-#region-america,
-#region-asia,
-#region-europe,
-#region-oceania {
+/* #root{
     margin: 0 25px 0 25px;
+} */
+
+.africa-cards-container,
+.america-cards-container,
+.asia-cards-container,
+.europe-cards-container,
+.oceania-cards-container,
+.single-card-info {
+    display: none;
 }
 
-
-#region-africa,
-#region-america,
-#region-asia,
-#region-europe,
-#region-oceania,
-#single-card-info {
-    display: none;
+.africa-cards-container,
+.america-cards-container,
+.asia-cards-container,
+.europe-cards-container,
+.oceania-cards-container,
+.cards-container {
+    padding:0 50px 0 50px;
 }
 
 #dropdownMenuButton {
     box-shadow: 5px 5px 5px rgb(219, 219, 219);
     color: hsl(200, 15%, 8%);
+    margin-right:8vw;
 }
 
 /* classes //////// */
@@ -65,7 +69,8 @@ td {
 }
 
 .input-container {
-    margin: 0 0 0 35px;
+    margin: 0 0 0 55px;
+    padding:0;
 }
 
 /* Card//////// */
@@ -129,13 +134,25 @@ td {
     margin: 60px 0 60px 0;
 }
 
-@media(max-width:845px) {
-    .dropdown-toggle {
-        margin: 25px 0 0 15px;
+@media(max-width:991px){
+    #dropdownMenuButton {
+        margin-left:11vw;
     }
+
 }
 
+@media(max-width:834px) {
+    #dropdownMenuButton {
+        margin:0;
+    }
+
+}
+
+
 @media(max-width:768px) {
+    #dropdownMenuButton {
+        margin:25px 0 0 15px;
+    }
     .card-img {
         height: 300px;
     }

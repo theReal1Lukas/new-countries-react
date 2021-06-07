@@ -14,14 +14,13 @@ function Cards(props) {
     .then(res => res.json())
     .then(
       (data) => { 
-        //  $('#root').css('display', 'block')
          $('.single-card').css('display', 'none');
          $('.input-container').css('display', 'none');
-         $('#region-africa').css('display', 'none');
-         $('#region-america').css('display', 'none');
-         $('#region-asia').css('display', 'none');
-         $('#region-europe').css('display', 'none');
-         $('#region-oceania').css('display', 'none');
+         $('.africa-cards-container').css('display', 'none');
+         $('.america-cards-container').css('display', 'none');
+         $('.asia-cards-container').css('display', 'none');
+         $('.europe-cards-container').css('display', 'none');
+         $('.oceania-cards-container').css('display', 'none');
          $('.single-card-info').css('display', 'block');
          $('.card-img-top').attr('src', data[0].flag) ;
          $('.single-card-country-name').html(data[0].name);
@@ -44,9 +43,9 @@ function Cards(props) {
         <CardImg  height='100%' src={props.flag} alt="Card image cap" />
         <CardBody>
           <CardTitle tag="h3">{props.name}</CardTitle>
-          <CardText tag="h6" className="mb-2"><strong>Population: </strong> {props.population}</CardText>
-          <CardText tag="h6" className="mb-2"><strong>Region:</strong> {props.region}</CardText>
-          <CardText tag="h6" className="mb-2"><strong>Capital:</strong> {props.capital}</CardText>
+          <CardText tag="h6" className="mb-2"><strong>Population: </strong> {props.population} </CardText>
+          <CardText tag="h6" className="mb-2"><strong>Region:</strong> {props.region} </CardText>
+          <CardText tag="h6" className="mb-2"><strong>Capital:</strong> {props.capital} </CardText>
         </CardBody>
       </Card>
      

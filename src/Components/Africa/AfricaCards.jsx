@@ -1,16 +1,15 @@
 import React from 'react';
 import Card from '../Card';
-import {Container, Row, Col} from 'reactstrap';
 import africaRegion from './africa-region';
 // 
 function AfricaCards () {
     return (
       <>
-      <Container fluid={true} className='africa-cards-container'>
-        <Row>
+      <div className='container-fluid africa-cards-container'>
+        <div className='row'>
         {africaRegion.map(africaCountry => {
           return (
-            <Col xs='12' md='6' lg='4' xl='3' className='single-card'>
+            <div className='col-12 col-md-6 col-lg-4 col-xl-3 single-card'>
             <Card 
       name={africaCountry.name}
       population={africaCountry.population}
@@ -18,12 +17,12 @@ function AfricaCards () {
       region = {africaCountry.region}
       flag = {africaCountry.flag}
     />
-            </Col>
+            </div>
           )
         })}
       
-        </Row>
-      </Container>
+        </div>
+      </div>
       </>
          
    
